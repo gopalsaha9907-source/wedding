@@ -1,0 +1,353 @@
+<!doctype html>
+<html lang="bn"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Biprava & Sayan Wedding</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&family=Noto+Serif+Bengali:wght@400;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,500&family=Tiro+Bangla:ital@0;1&display=swap">
+<style>
+/* Layout: one centred paper column; hero is an arched gold frame like the printed card, details follow as quiet ruled sections */
+:root{
+  --paper:#f6f0e4;
+  --paper-2:#efe6d3;
+  --maroon:#6b1226;
+  --gold:#a8844a;
+  --gold-soft:#d9c59a;
+  --ink:#3a2a24;
+  --leaf:#3d5a3a;
+  --f-display:'Playfair Display','Noto Serif Bengali',Georgia,serif;
+  --f-body:'Cormorant Garamond','Noto Serif Bengali',Georgia,serif;
+  --f-bn:'Noto Serif Bengali','Playfair Display',serif;
+  color-scheme:light;
+}
+*{box-sizing:border-box}
+body{background:var(--paper);color:var(--ink);font-family:var(--f-body);font-size:1.2rem;line-height:1.6;
+  padding-inline:max(16px,env(safe-area-inset-left,0px)) max(16px,env(safe-area-inset-right,0px));padding-block:0 3rem}
+body[data-lang="bn"] .en,body[data-lang="en"] .bn{display:none}
+body[data-lang="bn"]{font-family:var(--f-bn);font-size:1.05rem;line-height:1.85}
+.wrap{max-width:620px;margin-inline:auto}
+.lang{display:flex;justify-content:flex-end;gap:.25rem;padding-block:1rem}
+.lang button{font:inherit;font-size:.85rem;letter-spacing:.08em;background:none;border:1px solid var(--gold-soft);color:var(--maroon);padding:.3rem .9rem;cursor:pointer;border-radius:2px}
+.lang button[aria-pressed="true"]{background:var(--maroon);color:var(--paper);border-color:var(--maroon)}
+.lang button:focus-visible,a:focus-visible{outline:2px solid var(--maroon);outline-offset:3px}
+
+.arch{border:1.5px solid var(--gold);border-radius:999px 999px 0 0;padding:4px;margin-top:.5rem}
+.arch-in{border:1px solid var(--gold-soft);border-radius:999px 999px 0 0;padding:4.5rem 1.5rem 2.5rem;text-align:center;
+  background:radial-gradient(ellipse at 50% 0,var(--paper-2),transparent 60%)}
+.mantra{font-size:.95rem;color:var(--gold);letter-spacing:.18em;text-transform:uppercase}
+body[data-lang="bn"] .mantra{letter-spacing:.02em;text-transform:none;font-size:.95rem}
+h1{font-family:var(--f-display);color:var(--maroon);font-weight:700;font-size:clamp(2.2rem,9vw,3.4rem);line-height:1.15;margin:.8rem 0 1.5rem;text-wrap:balance}
+.names{display:inline-block;border:1px solid var(--gold);padding:1.1rem 2.2rem;clip-path:polygon(12% 0,88% 0,100% 50%,88% 100%,12% 100%,0 50%);background:var(--paper);min-width:min(100%,15rem)}
+.names span{display:block;font-family:var(--f-display);color:var(--maroon);font-weight:600;font-size:clamp(1.7rem,7vw,2.3rem)}
+.names i{display:block;width:3rem;height:1px;background:var(--gold);margin:.4rem auto}
+.date-line{margin-top:1.8rem;color:var(--maroon);font-size:1.05rem;letter-spacing:.06em}
+.quote{font-style:italic;max-width:26rem;margin:1.5rem auto 0;color:var(--ink)}
+.quote small{display:block;font-style:normal;color:var(--gold);margin-top:.3rem;font-size:.95rem}
+
+section{padding-block:3rem 0;text-align:center}
+h2{font-family:var(--f-display);color:var(--maroon);font-weight:600;font-size:1.5rem;margin:0 0 1rem;text-wrap:balance}
+h2::after{content:"";display:block;width:2.5rem;height:1px;background:var(--gold);margin:.8rem auto 0}
+.label{font-size:.85rem;letter-spacing:.2em;text-transform:uppercase;color:var(--gold)}
+body[data-lang="bn"] .label{letter-spacing:.03em;text-transform:none}
+p{margin:.3rem 0}
+
+.invite-names{font-family:var(--f-display);color:var(--maroon);font-size:1.15rem;font-weight:600;letter-spacing:.05em}
+.big{font-family:var(--f-display);color:var(--maroon);font-size:clamp(1.9rem,8vw,2.6rem);font-weight:600;line-height:1.2}
+.with{font-style:italic;color:var(--gold);display:block;margin-block:.2rem}
+
+.when{display:grid;grid-template-columns:repeat(3,auto);justify-content:center;gap:0;border-block:1px solid var(--gold-soft);margin-top:1rem}
+.when div{padding:.9rem 1.2rem;border-left:1px solid var(--gold-soft)}
+.when div:first-child{border-left:0}
+.when b{display:block;font-family:var(--f-display);color:var(--maroon);font-size:1.25rem}
+@media(max-width:420px){.when{grid-template-columns:1fr}.when div{border-left:0;border-top:1px solid var(--gold-soft)}.when div:first-child{border-top:0}}
+
+.count{display:flex;justify-content:center;gap:1.5rem;flex-wrap:wrap;margin-top:1rem}
+.count div{min-width:4rem}
+.count b{display:block;font-family:var(--f-display);font-size:2rem;color:var(--maroon);font-variant-numeric:tabular-nums;line-height:1.1}
+.count span{font-size:.8rem;letter-spacing:.15em;text-transform:uppercase;color:var(--gold)}
+body[data-lang="bn"] .count span{letter-spacing:0;text-transform:none}
+
+.families{display:grid;grid-template-columns:1fr 1fr;gap:1.5rem 2rem;text-align:left;margin-top:1rem}
+.families>div{min-width:0;border-top:1px solid var(--gold);padding-top:.8rem}
+.families h3{font-family:var(--f-display);color:var(--maroon);margin:0;font-size:1.3rem;font-weight:600}
+.families .label{display:block;margin-bottom:.6rem}
+.families dl{margin:0}
+.families dt{font-size:.8rem;color:var(--gold);letter-spacing:.08em;text-transform:uppercase;margin-top:.5rem}
+body[data-lang="bn"] .families dt{text-transform:none;letter-spacing:0}
+.families dd{margin:0}
+@media(max-width:480px){.families{grid-template-columns:1fr}}
+
+.venue{border:1px solid var(--gold-soft);padding:1.6rem 1rem;background:var(--paper-2);margin-top:1rem}
+.venue .big{font-size:1.6rem}
+.btn{display:inline-block;margin-top:1rem;padding:.6rem 1.6rem;background:var(--maroon);color:var(--paper);text-decoration:none;letter-spacing:.1em;font-size:.9rem;border-radius:2px}
+.btn:hover{background:#4d0c1b}
+.contact{display:flex;justify-content:center;gap:1rem;flex-wrap:wrap;margin-top:1rem}
+.contact button{font:inherit;font-size:1.15rem;color:var(--maroon);background:none;border:1px solid var(--gold-soft);padding:.4rem 1rem;cursor:pointer;border-radius:2px;font-variant-numeric:tabular-nums}
+.contact button:hover{border-color:var(--maroon)}
+.note{min-height:1.4rem;font-size:.9rem;color:var(--leaf)}
+footer{text-align:center;margin-top:3rem;color:var(--gold);font-size:.95rem}
+footer svg{display:block;margin:0 auto .6rem}
+
+/* ---- Bengali festive layer ---- */
+:root{--sindoor:#b3202f;--f-tiro:'Tiro Bangla','Noto Serif Bengali',serif}
+body{background:
+  radial-gradient(circle at 50% -10%,#fbf6ea 0,transparent 55%),
+  var(--paper)}
+#petals{position:fixed;inset:0;width:100%;height:100%;pointer-events:none;z-index:5}
+.wrap{position:relative;z-index:1}
+
+/* toran: mango-leaf garland across the top */
+.toran{display:block;width:calc(100% + 2px);height:auto;margin-top:-.5rem;overflow:visible}
+.toran .leaf{transform-box:fill-box;transform-origin:50% 0;animation:sway 4.5s ease-in-out infinite alternate}
+@keyframes sway{from{transform:rotate(-5deg)}to{transform:rotate(5deg)}}
+
+/* hero */
+.arch-in{position:relative;overflow:hidden}
+.arch-in>*{position:relative;z-index:1}
+.arch-in>.corner{position:absolute;z-index:0}
+.stage{position:relative;display:inline-block;padding:2.2rem 0}
+.mandala{position:absolute;left:50%;top:50%;width:min(130%,22rem);aspect-ratio:1;translate:-50% -50%;z-index:0;opacity:.55;animation:spin 120s linear infinite;pointer-events:none}
+@keyframes spin{to{rotate:360deg}}
+.stage .names{position:relative;z-index:1}
+body[data-lang="bn"] h1,body[data-lang="bn"] .names span{font-family:var(--f-tiro);font-weight:400}
+body[data-lang="bn"] h1{font-size:clamp(3rem,14vw,4.8rem);line-height:1.2}
+body[data-lang="bn"] .names span{font-size:clamp(2rem,9vw,2.8rem)}
+h1{background:linear-gradient(100deg,var(--maroon) 0 38%,#c79a45 48%,#f0d795 52%,#c79a45 56%,var(--maroon) 66% 100%);background-size:260% 100%;
+  -webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;color:var(--maroon);animation:shine 7s ease-in-out infinite}
+@keyframes shine{0%,20%{background-position:100% 0}80%,100%{background-position:0 0}}
+.rise{animation:rise 1.1s cubic-bezier(.2,.7,.2,1) both}
+.d1{animation-delay:.15s}.d2{animation-delay:.4s}.d3{animation-delay:.7s}.d4{animation-delay:1s}
+@keyframes rise{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+.mantra .om{display:inline-block;color:var(--sindoor)}
+.names{box-shadow:0 0 0 4px var(--paper),0 0 0 5px var(--gold-soft)}
+.date-line{display:flex;justify-content:center;align-items:center;gap:.7rem;flex-wrap:wrap}
+.date-line::before,.date-line::after{content:"❖";color:var(--gold);font-size:.7rem}
+body[data-lang="bn"] .quote{font-family:var(--f-tiro);font-size:1.2rem;line-height:1.9;color:var(--maroon)}
+.pulse{display:inline-block;animation:beat 2.6s ease-in-out infinite}
+@keyframes beat{50%{transform:scale(1.12)}}
+
+/* alpona divider */
+.alpona{display:block;margin:2.8rem auto 0;width:min(100%,22rem);height:auto;overflow:visible}
+.alpona .dot{animation:twinkle 3s ease-in-out infinite}
+.alpona .dot:nth-of-type(2n){animation-delay:1s}.alpona .dot:nth-of-type(3n){animation-delay:2s}
+@keyframes twinkle{50%{opacity:.25}}
+section{padding-block:1.6rem 0}
+body[data-lang="bn"] h2{font-family:var(--f-tiro);font-weight:400;font-size:1.9rem}
+body[data-lang="bn"] .families h3{font-family:var(--f-tiro);font-weight:400;font-size:1.7rem}
+body[data-lang="bn"] .big,body[data-lang="bn"] .when b{font-family:var(--f-tiro);font-weight:400}
+body[data-lang="bn"] .venue .big{font-size:1.9rem}
+h2::after{width:4rem;background:linear-gradient(90deg,transparent,var(--gold),transparent)}
+.families>div{background:linear-gradient(180deg,var(--paper-2),transparent 70%);padding-inline:.9rem;border-top:2px solid var(--gold);transition:transform .4s}
+.families>div:hover{transform:translateY(-3px)}
+.venue{position:relative;background:var(--paper-2);box-shadow:inset 0 0 0 4px var(--paper-2),inset 0 0 0 5px var(--gold-soft)}
+.btn{transition:transform .3s,background .3s}.btn:hover{transform:translateY(-2px)}
+.count div{border:1px solid var(--gold-soft);padding:.6rem .4rem;background:var(--paper)}
+footer .shankha{animation:beat 3.2s ease-in-out infinite}
+@media(prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation:none!important;transition:none!important}
+  #petals{display:none}
+}
+</style>
+
+</head><body data-lang="bn">
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <g id="lotus"><path d="M0 0C-9 -8 -9 -20 0 -30C9 -20 9 -8 0 0Z"/><path d="M0 0C-14 -3 -22 -14 -22 -24C-12 -20 -4 -12 0 0Z"/><path d="M0 0C14 -3 22 -14 22 -24C12 -20 4 -12 0 0Z"/><path d="M0 0C-20 4 -32 -2 -36 -12C-24 -12 -10 -8 0 0Z"/><path d="M0 0C20 4 32 -2 36 -12C24 -12 10 -8 0 0Z"/></g>
+    <g id="kalka"><path d="M0 0C-14 -4 -16 -22 -4 -30C6 -36 14 -28 8 -20C4 -14 10 -8 4 -2C2 0 0 0 0 0Z"/></g>
+  </defs>
+</svg>
+<canvas id="petals" aria-hidden="true"></canvas>
+<div class="wrap">
+  <svg class="toran" id="toran" viewBox="0 0 600 130" aria-hidden="true"></svg>
+  <div class="lang" role="group" aria-label="Language">
+    <button type="button" id="b-bn" aria-pressed="true">বাংলা</button>
+    <button type="button" id="b-en" aria-pressed="false">English</button>
+  </div>
+
+  <header class="arch"><div class="arch-in">
+    <svg class="corner" style="left:6px;bottom:6px" width="70" height="70" viewBox="-40 -40 80 80" aria-hidden="true"><g fill="none" stroke="#a8844a" stroke-width="1"><use href="#lotus" transform="translate(-10 30)"/><use href="#kalka" transform="translate(-20 10) rotate(-20) scale(.7)"/></g></svg>
+    <svg class="corner" style="right:6px;bottom:6px;transform:scaleX(-1)" width="70" height="70" viewBox="-40 -40 80 80" aria-hidden="true"><g fill="none" stroke="#a8844a" stroke-width="1"><use href="#lotus" transform="translate(-10 30)"/><use href="#kalka" transform="translate(-20 10) rotate(-20) scale(.7)"/></g></svg>
+    <p class="mantra rise bn"><span class="om">❁</span> ॥ শ্রীশ্রী প্রজাপতয়ে নমঃ ॥ <span class="om">❁</span></p>
+    <p class="mantra rise en"><span class="om">❁</span> ॥ Shree Shree Prajaptaye Namah ॥ <span class="om">❁</span></p>
+    <h1 class="rise d1"><span class="bn">শুভবিবাহ</span><span class="en">The Wedding of</span></h1>
+    <div class="stage rise d2">
+      <svg class="mandala" id="mandala" viewBox="-100 -100 200 200" aria-hidden="true"></svg>
+      <div class="names">
+        <span class="bn">বিপ্রভা</span><span class="en">Biprava</span>
+        <i></i>
+        <span class="bn">সায়ন</span><span class="en">Sayan</span>
+      </div>
+    </div>
+    <p class="date-line rise d3 bn">২৪শে অগ্রহায়ণ, ১৪৩৩ • ১১ই ডিসেম্বর, ২০২৬</p>
+    <p class="date-line rise d3 en">Friday, 11 December 2026</p>
+    <p class="quote rise d4 bn">“নবজীবনের পথে মিলনের তরী<br>বিধাতার আশীর্বাদ নিয়ে যাক ভরি।”<small>— শ্রীরবীন্দ্রনাথ ঠাকুর</small></p>
+    <p class="quote rise d4 en">“যদিদং হৃদয়ং মম, তদিদং হৃদয়ং তব”<small>Whatever is my heart, let that be yours.</small></p>
+  </div></header>
+  <svg class="alpona" viewBox="0 0 220 30" aria-hidden="true" data-alpona></svg>
+
+  <section>
+    <h2><span class="bn">সবিনয় নিবেদন</span><span class="en">You are invited</span></h2>
+    <p class="bn">আগামী ১১ই ডিসেম্বর, ২০২৬ শুক্রবার সন্ধ্যায় ‘রাধেশ্যাম ব্যাঙ্কোয়েট হল’-এ আয়োজিত শুভবিবাহ ও প্রীতিভোজ অনুষ্ঠানে উপস্থিত থাকিয়া নবদম্পতিকে আশীর্বাদ দানে বাধিত করিবেন।</p>
+    <div class="en">
+      <p class="invite-names">MR. BIMAN SAHA &amp; MRS. PRATIMA SAHA</p>
+      <p>cordially request your gracious presence and blessings on the auspicious occasion of the Wedding Ceremony of their beloved daughter</p>
+      <p class="big" style="margin-top:1rem">Biprava<span class="with">with</span>Sayan</p>
+      <p>Son of Mr. Subir Saha &amp; Mrs. Barali Saha</p>
+    </div>
+    <div class="when">
+      <div><span class="label"><span class="bn">বার</span><span class="en">Day</span></span><b><span class="bn">শুক্রবার</span><span class="en">Friday</span></b></div>
+      <div><span class="label"><span class="bn">তারিখ</span><span class="en">Date</span></span><b><span class="bn">১১ ডিসেম্বর ২০২৬</span><span class="en">11 Dec 2026</span></b></div>
+      <div><span class="label"><span class="bn">সময়</span><span class="en">Time</span></span><b><span class="bn">সন্ধ্যা ৭টা থেকে</span><span class="en">7:00 PM onwards</span></b></div>
+    </div>
+    <p class="bn" style="margin-top:.8rem;color:var(--gold)">২৪শে অগ্রহায়ণ, ১৪৩৩</p>
+    <p class="en" style="margin-top:.8rem;color:var(--gold)">24 Agrahayan, 1433 (Bengali calendar)</p>
+    <div class="count" aria-live="off" id="count">
+      <div><b id="cd">–</b><span class="bn">দিন</span><span class="en">days</span></div>
+      <div><b id="ch">–</b><span class="bn">ঘণ্টা</span><span class="en">hours</span></div>
+      <div><b id="cm">–</b><span class="bn">মিনিট</span><span class="en">minutes</span></div>
+    </div>
+  </section>
+
+  <svg class="alpona" viewBox="0 0 220 30" aria-hidden="true" data-alpona></svg>
+  <section>
+    <h2><span class="bn">পাত্রী ও পাত্র পরিচয়</span><span class="en">The Families</span></h2>
+    <div class="families">
+      <div>
+        <span class="label"><span class="bn">কল্যাণীয়া</span><span class="en">The bride</span></span>
+        <h3><span class="bn">বিপ্রভা</span><span class="en">Biprava</span></h3>
+        <dl>
+          <dt class="bn">পিতা</dt><dt class="en">Father</dt><dd><span class="bn">শ্রীযুক্ত বিমান সাহা</span><span class="en">Mr. Biman Saha</span></dd>
+          <dt class="bn">মাতা</dt><dt class="en">Mother</dt><dd><span class="bn">শ্রীমতী প্রতিমা সাহা</span><span class="en">Mrs. Pratima Saha</span></dd>
+          <dt class="bn">ঠাকুরদাদা</dt><dt class="en">Grandfather</dt><dd><span class="bn">শ্রীযুক্ত বিপদ ভঞ্জন সাহা</span><span class="en">Mr. Bipad Bhanjan Saha</span></dd>
+          <dt class="bn">ঠাকুরমা</dt><dt class="en">Grandmother</dt><dd><span class="bn">স্বর্গীয়া জ্যোৎস্না সাহা</span><span class="en">Late Mrs. Jyotsna Saha</span></dd>
+          <dt class="bn">নিবাস</dt><dt class="en">Residence</dt><dd><span class="bn">‘ট’ বাজার, বনগাঁ</span><span class="en">‘T’ Bazar, Bongaon</span></dd>
+        </dl>
+      </div>
+      <div>
+        <span class="label"><span class="bn">কল্যাণীয়</span><span class="en">The groom</span></span>
+        <h3><span class="bn">সায়ন</span><span class="en">Sayan</span></h3>
+        <dl>
+          <dt class="bn">পিতা</dt><dt class="en">Father</dt><dd><span class="bn">শ্রীযুক্ত সুবীর সাহা</span><span class="en">Mr. Subir Saha</span></dd>
+          <dt class="bn">মাতা</dt><dt class="en">Mother</dt><dd><span class="bn">শ্রীমতী বর্ণালী সাহা</span><span class="en">Mrs. Barali Saha</span></dd>
+          <dt class="bn">ঠাকুমা</dt><dt class="en">Grandmother</dt><dd><span class="bn">শ্রীযুক্তা অমিতা সাহা</span><span class="en">Mrs. Amita Saha</span></dd>
+          <dt class="bn">নিবাস</dt><dt class="en">Residence</dt><dd><span class="bn">কুঠিবাড়ী, বনগাঁ, উত্তর ২৪ পরগণা</span><span class="en">Kuthibari, Bongaon, North 24 Parganas</span></dd>
+        </dl>
+      </div>
+    </div>
+  </section>
+
+  <svg class="alpona" viewBox="0 0 220 30" aria-hidden="true" data-alpona></svg>
+  <section>
+    <h2><span class="bn">বিবাহবাসর ও প্রীতিভোজ</span><span class="en">Venue</span></h2>
+    <div class="venue">
+      <p class="big"><span class="bn">রাধেশ্যাম ব্যাঙ্কোয়েট হল</span><span class="en">Radheshyam Banquet Hall</span></p>
+      <p class="bn">কোর্ট রোড, বনগাঁ, উত্তর ২৪ পরগণা</p>
+      <p class="en">Court Road, Bongaon, North 24 Parganas</p>
+      <a class="btn" href="https://www.google.com/maps/search/?api=1&query=Radheshyam+Banquet+Hall+Court+Road+Bongaon" target="_blank" rel="noopener"><span class="bn">মানচিত্রে দেখুন</span><span class="en">OPEN IN MAPS</span></a>
+    </div>
+  </section>
+
+  <svg class="alpona" viewBox="0 0 220 30" aria-hidden="true" data-alpona></svg>
+  <section>
+    <h2><span class="bn">যোগাযোগ</span><span class="en">Contact</span></h2>
+    <p class="bn">বিনীত : শ্রীযুক্ত বিপদ ভঞ্জন সাহা (ঠাকুরদাদা)</p>
+    <p class="en">With regards, Mr. Bipad Bhanjan Saha (grandfather of the bride)</p>
+    <div class="contact">
+      <button type="button" data-num="9475134857">9475134857</button>
+      <button type="button" data-num="9907099897">9907099897</button>
+    </div>
+    <p class="note" id="note" role="status"></p>
+  </section>
+
+  <footer>
+    <svg width="44" height="22" viewBox="0 0 44 22" aria-hidden="true"><path d="M22 2C16 6 14 12 22 20C30 12 28 6 22 2Z" fill="none" stroke="#a8844a" stroke-width="1.2"/><path d="M22 20C12 20 6 14 4 8C12 8 18 12 22 20ZM22 20C32 20 38 14 40 8C32 8 26 12 22 20Z" fill="none" stroke="#a8844a" stroke-width="1.2"/></svg>
+    <span class="bn">আপনার উপস্থিতি আমাদের আনন্দ বাড়াবে।</span>
+    <span class="en">Your presence will make our day complete.</span>
+  </footer>
+</div>
+
+<script>
+(function(){
+  var NS='http://www.w3.org/2000/svg';
+  function el(p,n,a){var e=document.createElementNS(NS,n);for(var k in a)e.setAttribute(k,a[k]);p.appendChild(e);return e}
+  // Toran: mango-leaf garland with marigolds
+  var t=document.getElementById('toran'),N=15;
+  el(t,'path',{d:'M0 8Q300 56 600 8',fill:'none',stroke:'#a8844a','stroke-width':1.5});
+  for(var i=0;i<=N;i++){
+    var u=i/N,x=u*600,y=8+2*u*(1-u)*48*1+ (u*(1-u))*0; // quadratic bezier y on the curve
+    y=(1-u)*(1-u)*8+2*u*(1-u)*32+u*u*8;
+    var g=el(t,'g',{transform:'translate('+x.toFixed(1)+' '+y.toFixed(1)+')'});
+    var lf=el(g,'g',{'class':'leaf'});lf.style.animationDelay=(-i*0.37)+'s';
+    el(lf,'path',{d:'M0 0C-11 18 -9 40 0 62C9 40 11 18 0 0Z',fill:i%2?'#3d5a3a':'#4c6e47',stroke:'#2c4429','stroke-width':.8});
+    el(lf,'path',{d:'M0 4V56',stroke:'#cfe0b8','stroke-width':.8,opacity:.6});
+    var m=el(lf,'g',{transform:'translate(0 70)'});
+    el(m,'circle',{r:7,fill:i%2?'#e69a1c':'#f2b632'});
+    el(m,'circle',{r:3.5,fill:'#b3202f'});
+  }
+  // Mandala (alpona): layered petals, 12 and 8 fold
+  var md=document.getElementById('mandala');
+  function ring(n,r,rx,ry,stroke,fill){for(var i=0;i<n;i++){el(md,'ellipse',{cx:0,cy:-r,rx:rx,ry:ry,transform:'rotate('+(360/n*i)+')',fill:fill||'none',stroke:stroke,'stroke-width':.7})}}
+  ring(16,86,5,12,'#d9c59a');ring(12,66,9,22,'#a8844a');ring(8,44,10,26,'#b3202f','rgba(179,32,47,.06)');ring(12,26,4,10,'#a8844a');
+  el(md,'circle',{r:94,fill:'none',stroke:'#d9c59a','stroke-width':.6,'stroke-dasharray':'1.5 3'});
+  el(md,'circle',{r:12,fill:'none',stroke:'#a8844a','stroke-width':.8});
+  // Alpona dividers: lotus flanked by kalka, with dotted line
+  Array.prototype.forEach.call(document.querySelectorAll('[data-alpona]'),function(s){
+    el(s,'path',{d:'M6 24H92M128 24H214',stroke:'#d9c59a','stroke-width':1,'stroke-dasharray':'1 4','stroke-linecap':'round'});
+    var g=el(s,'g',{fill:'none',stroke:'#a8844a','stroke-width':1});
+    el(g,'use',{href:'#lotus',transform:'translate(110 26) scale(.6)'});
+    el(g,'use',{href:'#kalka',transform:'translate(84 26) scale(.55) rotate(-25)'});
+    el(g,'use',{href:'#kalka',transform:'translate(136 26) scale(.55) rotate(25) scale(-1 1)'});
+    [[96,22],[124,22],[70,24],[150,24]].forEach(function(p){var c=el(s,'circle',{cx:p[0],cy:p[1],r:1.4,fill:'#b3202f','class':'dot'})});
+  });
+  // Falling petals (marigold and rose), light and slow
+  var cv=document.getElementById('petals'),cx=cv.getContext('2d'),W,H,ps=[],dpr=Math.min(2,window.devicePixelRatio||1);
+  var reduce=window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  function size(){W=cv.width=innerWidth*dpr;H=cv.height=innerHeight*dpr}
+  size();addEventListener('resize',size);
+  var cols=['#f2b632','#e69a1c','#d8586a','#f6d9a0'];
+  for(var k=0;k<(innerWidth<500?14:24);k++)ps.push({x:Math.random(),y:Math.random(),s:4+Math.random()*5,v:.03+Math.random()*.05,w:Math.random()*6,a:Math.random()*6,c:cols[k%4]});
+  function draw(){
+    cx.clearRect(0,0,W,H);
+    ps.forEach(function(p){
+      p.y+=p.v/60;p.w+=.015;p.a+=.01;if(p.y>1.05){p.y=-.05;p.x=Math.random()}
+      var x=(p.x+Math.sin(p.w)*.03)*W,y=p.y*H,s=p.s*dpr;
+      cx.save();cx.translate(x,y);cx.rotate(p.a);cx.globalAlpha=.75;cx.fillStyle=p.c;
+      cx.beginPath();cx.ellipse(0,0,s,s*.5,0,0,6.283);cx.fill();cx.restore();
+    });
+    requestAnimationFrame(draw);
+  }
+  if(!reduce)draw();
+
+  var body=document.body,bn=document.getElementById('b-bn'),en=document.getElementById('b-en');
+  function setLang(l){
+    body.setAttribute('data-lang',l);
+    bn.setAttribute('aria-pressed',l==='bn');en.setAttribute('aria-pressed',l==='en');
+    document.documentElement.lang=l;
+    try{localStorage.setItem('wedding-lang',l)}catch(e){}
+    tick();
+  }
+  bn.onclick=function(){setLang('bn')};en.onclick=function(){setLang('en')};
+  var saved=null;try{saved=localStorage.getItem('wedding-lang')}catch(e){}
+  var digits='০১২৩৪৫৬৭৮৯';
+  function fmt(n){var s=String(n);return body.getAttribute('data-lang')==='bn'?s.replace(/\d/g,function(d){return digits[d]}):s}
+  // 11 Dec 2026, 7:00 PM IST = 13:30 UTC
+  var target=Date.UTC(2026,11,11,13,30);
+  function tick(){
+    var ms=Math.max(0,target-Date.now()),m=Math.floor(ms/60000);
+    document.getElementById('cd').textContent=fmt(Math.floor(m/1440));
+    document.getElementById('ch').textContent=fmt(Math.floor(m%1440/60));
+    document.getElementById('cm').textContent=fmt(m%60);
+  }
+  tick();setInterval(tick,30000);
+  var note=document.getElementById('note');
+  Array.prototype.forEach.call(document.querySelectorAll('[data-num]'),function(b){
+    b.onclick=function(){
+      var n=b.getAttribute('data-num'),bnl=body.getAttribute('data-lang')==='bn';
+      function ok(){note.textContent=bnl?'নম্বর কপি হয়েছে':'Number copied'}
+      function no(){note.textContent=bnl?'নম্বরটি: '+n:'Number: '+n}
+      try{navigator.clipboard.writeText(n).then(ok,no)}catch(e){no()}
+    };
+  });
+  if(saved==='en'||saved==='bn')setLang(saved);else document.documentElement.lang='bn';
+})();
+</script>
+
+</body></html>
